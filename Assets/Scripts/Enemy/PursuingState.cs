@@ -16,16 +16,25 @@ public class PursuingState : IState
 
     public void OnStart()
     {
-        
+        Debug.Log("Entré a Pursuit");
     }
 
     public void OnUpdate()
     {
-        
+        _enemy.FieldOfView();
+
+        Vector2 dir = _enemy.target.GetComponent<Transform>().position - _enemy.transform.position;
+        _enemy.transform.up = dir;
+        _enemy.transform.position += _enemy.transform.up * _enemy.speed * Time.deltaTime;
+
+        if(!_enemy.foundTarget)
+        {
+            _fsm.ChangeState(EnemyStatesEnum.Patrol);
+        }
     }
     
     public void OnExit()
     {
-        
+        Debug.Log("Salí de Pursuit");
     }
 }

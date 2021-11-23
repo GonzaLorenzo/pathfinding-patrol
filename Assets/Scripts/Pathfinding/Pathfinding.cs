@@ -12,7 +12,7 @@ public class Pathfinding
         //Dictionary<Node, int> costSoFar = new Dictionary<Node, int>();
         cameFrom.Add(startingNode, null);
         //costSoFar.Add(startingNode, 0);
-
+        Debug.Log("No paraba mas");
         while (frontier.Count() > 0)
         {
             Node current = frontier.Get();

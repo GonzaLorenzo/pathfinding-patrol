@@ -15,7 +15,11 @@ public class Enemy : MonoBehaviour
     public LayerMask targetMask;
     public LayerMask obstacleMask;
 
+    public Collider2D target;
+
     public bool foundTarget = false;
+
+    public bool foundWaypoint = true;
     void Start()
     {
         _fsm = new StateMachine();
@@ -40,6 +44,7 @@ public class Enemy : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, dir.magnitude, obstacleMask);
         if(hit == false)
         {
+            foundWaypoint = true;
             transform.up = dir;
             transform.position += transform.up * speed * Time.deltaTime;
 
@@ -50,16 +55,17 @@ public class Enemy : MonoBehaviour
                     _currentWaypoint = 0;
             }
         }
+        else
+        {
+            foundWaypoint = false;
+        }
     }
     public void FieldOfView()
     {
-        foundTarget = false;
-        Debug.Log("Empieza");
         Collider2D[] allTargets = Physics2D.OverlapCircleAll(transform.position, viewRadius, targetMask);
 
         foreach (var item in allTargets)
         {
-            Debug.Log("Tengo target");
             Vector2 dir = item.transform.position - transform.position;
             
             if (Vector2.Angle(transform.up, dir.normalized) < viewAngle / 2)
@@ -73,14 +79,19 @@ public class Enemy : MonoBehaviour
 
                     Debug.DrawLine(transform.position, item.transform.position, Color.green);
                     foundTarget = true;
-                    Debug.Log("Encontré al target");
+                    target = item;
                 }
                 else
                 {
+                    foundTarget = false;
                     Debug.DrawLine(transform.position, hit.point, Color.red);
-                    Debug.Log("Lo perdí");
                 }
             }
         }
+    }
+
+    public int GetCurrentWaypoint()
+    {
+        return _currentWaypoint;
     }
 }

@@ -15,15 +15,22 @@ public class PatrollingState : IState
 
     public void OnStart()
     {
-        
+        Debug.Log("Entré a Patrol");
     }
     public void OnUpdate()
     {
         _enemy.Patrol();
+
+        if(!_enemy.foundWaypoint)
+        {
+            _fsm.ChangeState(EnemyStatesEnum.Pathfinding);
+        }
+
         _enemy.FieldOfView();
 
         if(_enemy.foundTarget)
         {
+            _fsm.ChangeState(EnemyStatesEnum.Pursuit);
             Debug.Log("Gracias dios");
         }
         //Cuando encuentra al Player pasa a PursuitState.
