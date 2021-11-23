@@ -36,15 +36,19 @@ public class Enemy : MonoBehaviour
     public void Patrol()
     {
         Vector2 dir = waypoints[_currentWaypoint].position - transform.position;
-        //transform.forward = dir; transform.up debería ir hacia el punto.
-        transform.up = dir;
-        transform.position += transform.up * speed * Time.deltaTime;
 
-        if (dir.magnitude < 0.1f)
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, dir.magnitude, obstacleMask);
+        if(hit == false)
         {
-            _currentWaypoint++;
-            if (_currentWaypoint > waypoints.Count - 1)
-                _currentWaypoint = 0;
+            transform.up = dir;
+            transform.position += transform.up * speed * Time.deltaTime;
+
+            if (dir.magnitude < 0.1f)
+            {
+                _currentWaypoint++;
+                if (_currentWaypoint > waypoints.Count - 1)
+                    _currentWaypoint = 0;
+            }
         }
     }
     public void FieldOfView()
