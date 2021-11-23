@@ -64,11 +64,10 @@ public class GameManager : MonoBehaviour
                 closeNodes = dir;
                 closestNode = node;
 
-                Debug.Log("Vamos por " + node);
+                Debug.Log("Selecciono GoalNode" + node);
             }
         }
 
-        Debug.Log("tomá " + closestNode);
         first = true;
         return closestNode; 
     }

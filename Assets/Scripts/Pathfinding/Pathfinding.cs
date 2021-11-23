@@ -12,7 +12,6 @@ public class Pathfinding
         Dictionary<Node, int> costSoFar = new Dictionary<Node, int>();
         cameFrom.Add(startingNode, null);
         costSoFar.Add(startingNode, 0);
-        Debug.Log("No paraba mas");
         while (frontier.Count() > 0)
         {
             Node current = frontier.Get();
@@ -31,7 +30,7 @@ public class Pathfinding
                 yield break;
             }
 
-            foreach (Node next in current.GetNeighbors(startingNode))
+            foreach(Node next in current.GetNeighbors(startingNode))
             {
                 if (next.blocked) continue;
                 int newCost = costSoFar[current] + next.cost;
@@ -52,23 +51,23 @@ public class Pathfinding
                     float priority = newCost + Heuristic(next.transform.position, goalNode.transform.position);
                     frontier.Put(next, priority);
 
-                //}
+                }
+            
+                GameManager.instance.PaintGameObjectColor(current.gameObject, Color.gray);
             }
-            GameManager.instance.PaintGameObjectColor(current.gameObject, Color.gray);
         }
-    }
 
-    float Heuristic(Vector2 a, Vector2 b)
-    {
-        return Vector2.Distance(a, b);
-    }
-
-    void PaintNodeList(List<Node> list)
-    {
-        foreach (var item in list)
+        float Heuristic(Vector2 a, Vector2 b)
         {
-            GameManager.instance.PaintGameObjectColor(item.gameObject, Color.cyan);
+            return Vector2.Distance(a, b);
         }
-    }
+
+        void PaintNodeList(List<Node> list)
+        {
+            foreach (var item in list)
+            {
+                GameManager.instance.PaintGameObjectColor(item.gameObject, Color.cyan);
+            }
+        }
     }
 }

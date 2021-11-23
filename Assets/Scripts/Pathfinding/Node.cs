@@ -47,8 +47,7 @@ public class Node : MonoBehaviour
             }
         }      
         _neighbors.Add(closestNode);
-        Debug.Log("Añadi " + closestNode);     
-        Debug.Log("tenemos " + _neighbors.Count);  
+        Debug.Log("Añadi " + closestNode);
        
         first = true;
         return _neighbors;
