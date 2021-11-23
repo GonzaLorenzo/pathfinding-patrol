@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
 
     public void SetNodes()
     {
-
+        
     }
 
     public void PaintGameObjectColor(GameObject go, Color color)
