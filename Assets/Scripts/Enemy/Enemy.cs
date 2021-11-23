@@ -9,23 +9,25 @@ public class Enemy : MonoBehaviour
     public float speed;
     private int _currentWaypoint = 0;
 
-    [Header("Field of view")]
+    [Header("FIELD OF VIEW")]
     public float viewRadius;
     public float viewAngle;
     public LayerMask targetMask;
     public LayerMask obstacleMask;
 
+    public bool foundTarget = false;
     void Start()
     {
         _fsm = new StateMachine();
         _fsm.AddState(EnemyStatesEnum.Patrol, new PatrollingState(_fsm, this));
         _fsm.AddState(EnemyStatesEnum.Pursuit, new PursuingState(_fsm, this));
+        _fsm.AddState(EnemyStatesEnum.Pathfinding, new PathfindingState(_fsm, this));
         _fsm.ChangeState(EnemyStatesEnum.Patrol);
     }
 
     void Update()
     {
-        FieldOfView();
+        _fsm.OnUpdate();
     }
 
     /// <summary>
@@ -34,8 +36,9 @@ public class Enemy : MonoBehaviour
     public void Patrol()
     {
         Vector2 dir = waypoints[_currentWaypoint].position - transform.position;
-        transform.forward = dir;
-        transform.position += transform.forward * speed * Time.deltaTime;
+        //transform.forward = dir; transform.up debería ir hacia el punto.
+        transform.up = dir;
+        transform.position += transform.up * speed * Time.deltaTime;
 
         if (dir.magnitude < 0.1f)
         {
@@ -44,8 +47,10 @@ public class Enemy : MonoBehaviour
                 _currentWaypoint = 0;
         }
     }
-    void FieldOfView()
+    public void FieldOfView()
     {
+        foundTarget = false;
+        Debug.Log("Empieza");
         Collider2D[] allTargets = Physics2D.OverlapCircleAll(transform.position, viewRadius, targetMask);
 
         foreach (var item in allTargets)
@@ -53,7 +58,7 @@ public class Enemy : MonoBehaviour
             Debug.Log("Tengo target");
             Vector2 dir = item.transform.position - transform.position;
             
-            if (Vector2.Angle(transform.forward, dir.normalized) < viewAngle / 2)
+            if (Vector2.Angle(transform.up, dir.normalized) < viewAngle / 2)
             {
                 //if(Physics2D.Raycast(transform.position, dir, dir.magnitude, obstacleMask) == false)
                 RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, dir.magnitude, obstacleMask);
@@ -63,13 +68,13 @@ public class Enemy : MonoBehaviour
                     //_targetsFound.Add(item.gameObject);
 
                     Debug.DrawLine(transform.position, item.transform.position, Color.green);
-
-                    Debug.Log("Te encontré");
+                    foundTarget = true;
+                    Debug.Log("Encontré al target");
                 }
                 else
                 {
                     Debug.DrawLine(transform.position, hit.point, Color.red);
-                    Debug.Log("Donde tas?");
+                    Debug.Log("Lo perdí");
                 }
             }
         }

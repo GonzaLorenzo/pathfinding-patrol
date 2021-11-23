@@ -5,7 +5,8 @@ using UnityEngine;
 public enum EnemyStatesEnum
 {
     Patrol,
-    Pursuit
+    Pursuit,
+    Pathfinding
 }
 
 public class StateMachine

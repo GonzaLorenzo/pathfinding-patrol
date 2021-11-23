@@ -20,7 +20,12 @@ public class PatrollingState : IState
     public void OnUpdate()
     {
         _enemy.Patrol();
+        _enemy.FieldOfView();
 
+        if(_enemy.foundTarget)
+        {
+            Debug.Log("Gracias dios");
+        }
         //Cuando encuentra al Player pasa a PursuitState.
     }
     public void OnExit()
