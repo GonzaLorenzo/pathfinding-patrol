@@ -1,0 +1,919 @@
+fileFormatVersion: 2
+guid: 96f9a10006507c144a505ee0cc0c76bb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8146345920647918158
+    second: EnemyGhost_0
+  - first:
+      213: -2735207784910701233
+    second: EnemyGhost_1
+  - first:
+      213: 7265738794948839154
+    second: EnemyGhost_2
+  - first:
+      213: 3913829000225819977
+    second: EnemyGhost_3
+  - first:
+      213: -6848371069735244372
+    second: EnemyGhost_4
+  - first:
+      213: 3033957532281296628
+    second: EnemyGhost_5
+  - first:
+      213: -7664829395937941524
+    second: EnemyGhost_6
+  - first:
+      213: 5916242895948682344
+    second: EnemyGhost_7
+  - first:
+      213: 5574178894641995723
+    second: EnemyGhost_8
+  - first:
+      213: 4271798067743124110
+    second: EnemyGhost_9
+  - first:
+      213: -5085956091320990111
+    second: EnemyGhost_10
+  - first:
+      213: -409148294380580549
+    second: EnemyGhost_11
+  - first:
+      213: 7120621185589973146
+    second: EnemyGhost_12
+  - first:
+      213: -5367797876990723624
+    second: EnemyGhost_13
+  - first:
+      213: 7286275926772993551
+    second: EnemyGhost_14
+  - first:
+      213: -8601241348816885269
+    second: EnemyGhost_15
+  - first:
+      213: 2730809230002532400
+    second: EnemyGhost_16
+  - first:
+      213: 7678587332567277946
+    second: EnemyGhost_17
+  - first:
+      213: -5047914666565993512
+    second: EnemyGhost_18
+  - first:
+      213: 3409853740425101831
+    second: EnemyGhost_19
+  - first:
+      213: -305657973725429995
+    second: EnemyGhost_20
+  - first:
+      213: -8619400683051975679
+    second: EnemyGhost_21
+  - first:
+      213: -8496795791083360061
+    second: EnemyGhost_22
+  - first:
+      213: -6127334426777049874
+    second: EnemyGhost_23
+  - first:
+      213: -7513306355483903194
+    second: EnemyGhost_24
+  - first:
+      213: 2737393690617847703
+    second: EnemyGhost_25
+  - first:
+      213: 5189464303702188107
+    second: EnemyGhost_26
+  - first:
+      213: 8466038214356985026
+    second: EnemyGhost_27
+  - first:
+      213: 3793592539458296474
+    second: EnemyGhost_28
+  - first:
+      213: 5184302054899123777
+    second: EnemyGhost_29
+  - first:
+      213: -1899531488487756132
+    second: EnemyGhost_30
+  - first:
+      213: 6911324383344439479
+    second: EnemyGhost_31
+  - first:
+      213: -6487521611664304129
+    second: EnemyGhost_32
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EnemyGhost_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 509
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e96b696a9e3b15d469fa9e82e377ccdc
+      internalID: -8146345920647918158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_1
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 511
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e855c7ece2c772546aa71ff30165fe60
+      internalID: -2735207784910701233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 396
+        width: 154
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00fdccc9f52657243a397038a3eb154d
+      internalID: 7265738794948839154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 500
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87c04ab193c87b47b79aecbe8fe49c1
+      internalID: 3913829000225819977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_4
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 392
+        width: 152
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab3f15846f9bef4fbe07e07ca667aa8
+      internalID: -6848371069735244372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_5
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 488
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c606662ec015f4b8c8de9e38f725aa
+      internalID: 3033957532281296628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_6
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 387
+        width: 152
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82b3d36b56992247b2edfb0d46d4289
+      internalID: -7664829395937941524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_7
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 374
+        width: 151
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a73dd7623642445af9bf5723f7fa55
+      internalID: 5916242895948682344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_8
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 477
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5567badd61961448f5d151addeddd2
+      internalID: 5574178894641995723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_9
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 355
+        width: 54
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d2a066ef0eb664fa7cc383629c5aa9
+      internalID: 4271798067743124110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_10
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 354
+        width: 55
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada11bd5534453b45a77073b2faede6f
+      internalID: -5085956091320990111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_11
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 354
+        width: 59
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1df2f1da4798a4eaec6268f03cc255
+      internalID: -409148294380580549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_12
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 353
+        width: 65
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712193258d3ae504e87474696b28499e
+      internalID: 7120621185589973146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_13
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 294
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aecf3295924252f4da10c1458edc8b47
+      internalID: -5367797876990723624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_14
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 177
+        width: 147
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b8e8805a1333444ad81b90bf46a052
+      internalID: 7286275926772993551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_15
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 286
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 615a10e270abc894f97087df9242d22d
+      internalID: -8601241348816885269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_16
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 282
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036ab00088248e347b75040a4214eef4
+      internalID: 2730809230002532400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_17
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 177
+        width: 161
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926b32fb9fec1bb41b21b6227ab53ac2
+      internalID: 7678587332567277946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_18
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 275
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c917c9ba2c1ea35478cf7e331501b161
+      internalID: -5047914666565993512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_19
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 177
+        width: 146
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659c9172a4b889b4caf72fdb1091ebad
+      internalID: 3409853740425101831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_20
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 255
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b8093b3d3c4984e8cd6569b778a2b6
+      internalID: -305657973725429995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_21
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 175
+        width: 166
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7abb2e11f00154ea83a6e97bd6d66e
+      internalID: -8619400683051975679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_22
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 141
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0952dcccc76e5d547b3f20e8821114b7
+      internalID: -8496795791083360061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_23
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 138
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500ee47f81e9e924387c0c076dcc116e
+      internalID: -6127334426777049874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_24
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 44
+        width: 153
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a67eb90d69731a4b8315e58dabbd77f
+      internalID: -7513306355483903194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_25
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 119
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970581dee96a1a44992ea546d73fc299
+      internalID: 2737393690617847703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_26
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 21
+        width: 143
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6593be0064091a49ab52773c62a07c2
+      internalID: 5189464303702188107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_27
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 37
+        width: 150
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7715506ddc2a62741b948658b4e61c73
+      internalID: 8466038214356985026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_28
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 0
+        width: 125
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443226ba5c375dc4f9dc6b2897e178b1
+      internalID: 3793592539458296474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_29
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 111
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd148c31e59e72e46b04b3050471ac6e
+      internalID: 5184302054899123777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_30
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 3
+        width: 65
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2666b76e1dfc734c8bc1a8c0db3cb6c
+      internalID: -1899531488487756132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_31
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 4
+        width: 59
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f19636e06fc715d47a992a63590dad84
+      internalID: 6911324383344439479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyGhost_32
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 4
+        width: 55
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910818930751ff24aba801c829233c87
+      internalID: -6487521611664304129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

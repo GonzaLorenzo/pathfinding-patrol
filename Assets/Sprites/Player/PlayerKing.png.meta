@@ -1,0 +1,1279 @@
+fileFormatVersion: 2
+guid: a8ed04b82bc5c7f4da868617e973ae86
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6566617840959513660
+    second: PlayerKing_0
+  - first:
+      213: 4546779908852049789
+    second: PlayerKing_1
+  - first:
+      213: 2941233252415405382
+    second: PlayerKing_2
+  - first:
+      213: 7553214591010838361
+    second: PlayerKing_3
+  - first:
+      213: -2714151894776019792
+    second: PlayerKing_4
+  - first:
+      213: 7142693489344139802
+    second: PlayerKing_5
+  - first:
+      213: 2809048858978786575
+    second: PlayerKing_6
+  - first:
+      213: 6023428357934656453
+    second: PlayerKing_7
+  - first:
+      213: 7397953848438337226
+    second: PlayerKing_8
+  - first:
+      213: 518502718183681539
+    second: PlayerKing_9
+  - first:
+      213: 6275909834565952944
+    second: PlayerKing_10
+  - first:
+      213: -3378126015296488720
+    second: PlayerKing_11
+  - first:
+      213: 4255755932355216809
+    second: PlayerKing_12
+  - first:
+      213: 8445486919403708809
+    second: PlayerKing_13
+  - first:
+      213: 2850698239002446410
+    second: PlayerKing_14
+  - first:
+      213: 2116445534882209898
+    second: PlayerKing_15
+  - first:
+      213: 4293541134950481905
+    second: PlayerKing_16
+  - first:
+      213: 2250611546706018686
+    second: PlayerKing_17
+  - first:
+      213: 3368558549070884037
+    second: PlayerKing_18
+  - first:
+      213: -620074098573820701
+    second: PlayerKing_19
+  - first:
+      213: -538276455112522762
+    second: PlayerKing_20
+  - first:
+      213: -5996944770389449842
+    second: PlayerKing_21
+  - first:
+      213: 3662959537770327194
+    second: PlayerKing_22
+  - first:
+      213: 7302250899261777525
+    second: PlayerKing_23
+  - first:
+      213: -1732770249399068562
+    second: PlayerKing_24
+  - first:
+      213: -6744441726442004659
+    second: PlayerKing_25
+  - first:
+      213: 5421732257616214867
+    second: PlayerKing_26
+  - first:
+      213: -6578121715416463453
+    second: PlayerKing_27
+  - first:
+      213: -244452420701679845
+    second: PlayerKing_28
+  - first:
+      213: 6654668512141430456
+    second: PlayerKing_29
+  - first:
+      213: 794841961652934596
+    second: PlayerKing_30
+  - first:
+      213: -7117868737259536648
+    second: PlayerKing_31
+  - first:
+      213: -6973817052057597370
+    second: PlayerKing_32
+  - first:
+      213: 8537047242093561582
+    second: PlayerKing_33
+  - first:
+      213: 772122841479319572
+    second: PlayerKing_34
+  - first:
+      213: 7470299684921876600
+    second: PlayerKing_35
+  - first:
+      213: -3275294152231121025
+    second: PlayerKing_36
+  - first:
+      213: 4401919880018331447
+    second: PlayerKing_37
+  - first:
+      213: -3900528207846329362
+    second: PlayerKing_38
+  - first:
+      213: 1988062138963958337
+    second: PlayerKing_39
+  - first:
+      213: -2530397620377863814
+    second: PlayerKing_40
+  - first:
+      213: 233711145408304117
+    second: PlayerKing_41
+  - first:
+      213: -9055356897907209353
+    second: PlayerKing_42
+  - first:
+      213: -3679880807146138720
+    second: PlayerKing_43
+  - first:
+      213: -6987674383664730031
+    second: PlayerKing_44
+  - first:
+      213: 4816175016979886173
+    second: PlayerKing_45
+  - first:
+      213: -3362695296852031547
+    second: PlayerKing_46
+  - first:
+      213: -2178053448686113967
+    second: PlayerKing_47
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerKing_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 311.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9207b3b9812107d4f9cb656ea8f33a9c
+      internalID: -6566617840959513660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 311.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 227e4cf37e53c4e43a93f4b7bffde78a
+      internalID: 4546779908852049789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 311.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c5adf1cd0d6a344b33f0876df6e116
+      internalID: 2941233252415405382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_3
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 311.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62284764ffea24e4eb69666c18633e38
+      internalID: 7553214591010838361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_4
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 311.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957b551d73cc20b459d50c1dde836893
+      internalID: -2714151894776019792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_5
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 311.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980b972e2cd30c844b6788ef6d4601cc
+      internalID: 7142693489344139802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_6
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 311.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946d5e359922c594bb70d98751811e27
+      internalID: 2809048858978786575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_7
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 311.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14a4a6f93bbf4b142abce440bee29f9e
+      internalID: 6023428357934656453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 311.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ca550c453969045831b077a441c4e9
+      internalID: 7397953848438337226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_9
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 311.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01eb54c03c002fa42971bd49fc95f825
+      internalID: 518502718183681539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_10
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 311.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb2cbbd2899bb844b496dc8abb731d7
+      internalID: 6275909834565952944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_11
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 311.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be24aded0cc08234684aad98cc228feb
+      internalID: -3378126015296488720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50226f7c0a590a24a8bc8d99218af012
+      internalID: 4255755932355216809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_13
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 208.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf04c332d4b75394d9722c20ca632596
+      internalID: 8445486919403708809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_14
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 208.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c1c927e24977f40960b530965d7db0
+      internalID: 2850698239002446410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_15
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 208.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf9d955bf709c44b804580813bc41d8
+      internalID: 2116445534882209898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_16
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 208.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92f6458290fff94d953e37f3baad71c
+      internalID: 4293541134950481905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_17
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 208.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0684e579481651c4c8895f0c06e4ec20
+      internalID: 2250611546706018686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_18
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 208.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d4da6cd0680404bb8487d01ddf0609
+      internalID: 3368558549070884037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_19
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 208.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235812ab0db76bd4a93946d827f3b676
+      internalID: -620074098573820701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_20
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 208.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705c2296d852d32449298991d92b0494
+      internalID: -538276455112522762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_21
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 208.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ace716ff0f2e64395039b6687f469d
+      internalID: -5996944770389449842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_22
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 208.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5172578b737b7e44bb888023c19effa
+      internalID: 3662959537770327194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_23
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 208.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959a1c97a5c04c74f99999c6eb396411
+      internalID: 7302250899261777525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 105.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21ee3661e37dc04c8cd97059bda1c60
+      internalID: -1732770249399068562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_25
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 105.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a17fd7efa32da4587795dcad9916d5
+      internalID: -6744441726442004659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_26
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 105.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e22c0507ec90a4d4cad42674f0c2d97e
+      internalID: 5421732257616214867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_27
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 105.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480430715f9229a4f9020bfae15a30a4
+      internalID: -6578121715416463453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_28
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 105.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5340d1d4f59a341b86a224d256ea8e
+      internalID: -244452420701679845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_29
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 105.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b465e488e8a0bce418b9c8787030578d
+      internalID: 6654668512141430456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_30
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 105.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d084d718c2f354e9a99d798afa71e3
+      internalID: 794841961652934596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_31
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 105.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7511c59d5360748a988d9203bf4e5d
+      internalID: -7117868737259536648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_32
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 105.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2e33bac65907b4d9792036b0491b0e
+      internalID: -6973817052057597370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_33
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 105.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5018780cc58b47942bcc082bc367ab44
+      internalID: 8537047242093561582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_34
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 105.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a61d90b3436a2438216fbe67be5127
+      internalID: 772122841479319572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_35
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 105.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 433c2bd2cf24db645806a921d53ae5cc
+      internalID: 7470299684921876600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1770f59c7c999b548861e454590c0158
+      internalID: -3275294152231121025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_37
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 2.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153ae92d4882d824eb3017569b799774
+      internalID: 4401919880018331447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_38
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 2.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4759d2f6b88dfe845b483d1809d3d775
+      internalID: -3900528207846329362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_39
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 2.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a6e088eea70e94cbeb21cbf4a32787
+      internalID: 1988062138963958337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_40
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 2.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4e4174dea3aaa4aa3f314fe116cce0
+      internalID: -2530397620377863814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_41
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 2.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3da3c78c6ab5e44a807f34ae06a0d82
+      internalID: 233711145408304117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_42
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdca05f0c59633f43b37d7fc4e730ccd
+      internalID: -9055356897907209353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_43
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 2.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc0e2f412491f446a571f393f34066f
+      internalID: -3679880807146138720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_44
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e2e13cf0773a44b857551c3d9095f6
+      internalID: -6987674383664730031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_45
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 2.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78cc2dec415bd54a89511b74b639551
+      internalID: 4816175016979886173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_46
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385ac14670d3e484ea527afb4a676a9d
+      internalID: -3362695296852031547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerKing_47
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 2.25
+        width: 75.833336
+        height: 103.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af7e63632a7b274a9959c306733eaef
+      internalID: -2178053448686113967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

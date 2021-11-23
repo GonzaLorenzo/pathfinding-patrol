@@ -8,20 +8,10 @@ public class PursuingState : IState
     private Enemy _enemy;
     private float _timer;
     
-    void Start()
+    public PursuingState(StateMachine fsm, Enemy p)
     {
-        
-    }
-
-
-    void Update()
-    {
-        
-    }
-
-    public void OnExit()
-    {
-        
+        _fsm = fsm;
+        _enemy = p;
     }
 
     public void OnStart()
@@ -30,6 +20,11 @@ public class PursuingState : IState
     }
 
     public void OnUpdate()
+    {
+        
+    }
+    
+    public void OnExit()
     {
         
     }
