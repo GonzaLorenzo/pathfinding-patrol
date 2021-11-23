@@ -1378,7 +1378,8 @@ GameObject:
   m_Component:
   - component: {fileID: 823549406}
   - component: {fileID: 823549405}
-  m_Layer: 0
+  - component: {fileID: 823549407}
+  m_Layer: 8
   m_Name: PlayerKing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1449,6 +1450,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &823549407
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823549404}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.7583334, y: 1.0375}
+    newSize: {x: 0.7583334, y: 1.0375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7583334, y: 1.0375}
+  m_EdgeRadius: 0
 --- !u!1001 &861568836
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3691,12 +3718,12 @@ PrefabInstance:
     - target: {fileID: 6332614040718817769, guid: b9c3ba1e6e62d404187357b9f23dff4a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.29
+      value: 2.51
       objectReference: {fileID: 0}
     - target: {fileID: 6332614040718817769, guid: b9c3ba1e6e62d404187357b9f23dff4a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.23
+      value: -3.67
       objectReference: {fileID: 0}
     - target: {fileID: 6332614040718817769, guid: b9c3ba1e6e62d404187357b9f23dff4a,
         type: 3}
@@ -3767,6 +3794,36 @@ PrefabInstance:
         type: 3}
       propertyPath: targetMask.m_Bits
       value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 8958222219857751223, guid: b9c3ba1e6e62d404187357b9f23dff4a,
+        type: 3}
+      propertyPath: viewRadius
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8958222219857751223, guid: b9c3ba1e6e62d404187357b9f23dff4a,
+        type: 3}
+      propertyPath: viewAngle
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8958222219857751223, guid: b9c3ba1e6e62d404187357b9f23dff4a,
+        type: 3}
+      propertyPath: obstacleMask.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 8958222219857751223, guid: b9c3ba1e6e62d404187357b9f23dff4a,
+        type: 3}
+      propertyPath: targetDefaultColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8958222219857751223, guid: b9c3ba1e6e62d404187357b9f23dff4a,
+        type: 3}
+      propertyPath: targetDefaultColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8958222219857751223, guid: b9c3ba1e6e62d404187357b9f23dff4a,
+        type: 3}
+      propertyPath: targetDefaultColor.b
+      value: 0.8160777
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9c3ba1e6e62d404187357b9f23dff4a, type: 3}
