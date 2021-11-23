@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public Node startingNode;
     public Node goalNode;
     public Pathfinding _pf;
-    private float debugTime;
+    private float debugTime = 1;
     private Vector2 closeNodes;
     private Node closestNode;
     private bool first = true;
@@ -34,8 +34,7 @@ public class GameManager : MonoBehaviour
 
     public void SearchPath(Node startingNode, Node goalNode)
     {
-        StartCoroutine(_pf.PaintAStar(startingNode, goalNode, debugTime));
-        Debug.Log("Hubo exito");        
+        StartCoroutine(_pf.PaintAStar(startingNode, goalNode, debugTime));     
     }
 
     public void AddNodes(Node node)
@@ -43,12 +42,6 @@ public class GameManager : MonoBehaviour
         nodes.Add(node);
         Debug.Log("Node added");
     }
-
-    //public void SetNodes(Node s, Node g)
-    //{
-        //startingNode = s;
-        //goalNode = g;
-    //}
 
     public Node GetGoalNode(Transform position) //Vector2 position
     {
@@ -58,16 +51,14 @@ public class GameManager : MonoBehaviour
             //if(closeNodes == null || dir.x < closeNodes.x && dir.y < closeNodes.y)
             
             Vector2 dir = node.transform.position - position.transform.position;
-            Debug.Log("foreach parte dos " + dir + node);
+            //Debug.Log("foreach GetGoalNode" + dir + node);
 
             if(first)
             {
-                Debug.Log("Me saqué el firts");
                 closeNodes = dir;
                 closestNode = node;
                 first = false;
             }
-            //if(dir.x < closeNodes.x && dir.y < closeNodes.y)
             if(dir.magnitude < closeNodes.magnitude)
             {
                 closeNodes = dir;

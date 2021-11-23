@@ -4,23 +4,27 @@ using UnityEngine;
 
 public class Node : MonoBehaviour
 {
-    private HashSet<Node> _neighbors = new HashSet<Node>();
+    private List<Node> _neighbors = new List<Node>();
     private Vector2 closeNodes;
     private Node closestNode;
+    public LayerMask obstacleMask;
     private bool first = true;
-    //public bool blocked;
-    //public int cost;
+    public bool blocked;
+    public int cost;
 
     private void Start()
     {
         GameManager.instance.AddNodes(this);
     }
-    public HashSet<Node> GetNeighbors()
+    public List<Node> GetNeighbors(Node sn)
     {
         foreach(Node node in GameManager.instance.nodes)
         {
             Vector2 dir = node.transform.position - transform.position;
-            Debug.Log("foreach " + dir + node);
+           
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, dir.magnitude, obstacleMask);
+            if(hit == true) continue;
+            //Debug.Log("foreach " + dir + node);
 
             if(first)
             {
@@ -29,21 +33,23 @@ public class Node : MonoBehaviour
                 first = false;
             }
             //else if(dir.x < closeNodes.x && dir.y < closeNodes.y && dir.x > 0 && dir.y > 0)
-            else if(dir.magnitude < closeNodes.magnitude && dir.magnitude > 0.2)
+            else if(dir.magnitude < closeNodes.magnitude && dir.magnitude > 0.5)
             {
-                closeNodes = dir;
-                closestNode = node;
-                Debug.Log("a ver " + closeNodes + closestNode);
+                if(node != sn)
+                {
+                    if(!_neighbors.Contains(node))
+                    {
+                    closeNodes = dir;
+                    closestNode = node;
+                    Debug.Log("Selecciono " + closeNodes + closestNode);
+                    }
+                }
             }
-        }
-
-        if(!_neighbors.Contains(closestNode))
-        {
-            _neighbors.Add(closestNode);
-        }
-
-        
-        Debug.Log("Aca es? + " + closestNode);
+        }      
+        _neighbors.Add(closestNode);
+        Debug.Log("Añadi " + closestNode);     
+        Debug.Log("tenemos " + _neighbors.Count);  
+       
         first = true;
         return _neighbors;
     }

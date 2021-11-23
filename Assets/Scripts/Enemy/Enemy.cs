@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
     public bool foundTarget = false;
 
     public bool foundWaypoint = true;
-    void Start()
+    void Awake() //Start()
     {
         _fsm = new StateMachine();
         _fsm.AddState(EnemyStatesEnum.Patrol, new PatrollingState(_fsm, this));
