@@ -23,52 +23,64 @@ public class PathfindingState : IState
 
     public void OnStart()
     {
+        GetAStar();
         Debug.Log("Entré a pathfinding");
-        myPath = new List<Node>();
-        
-        startingPoint = GameManager.instance.GetGoalNode(_enemy.transform);
-        Debug.Log("Start at " + startingPoint);
-
-        _currentWaypoint = _enemy.GetCurrentWaypoint();
-        
-        endingPoint = GameManager.instance.GetGoalNode(_enemy.waypoints[_currentWaypoint].transform);
-        Debug.Log("End at " + endingPoint);
-
-        myPath = _pf.ConstructPathAStar(endingPoint, startingPoint); //Antes mandaba startingPoint,endingPoint. Ahora van al revés.
     }
     public void OnUpdate()
     {
+        _enemy._patrolPath = myPath;
+
+        _enemy.FieldOfView();
         if(_enemy.foundTarget)
         {
-            myPath = null;
-            _enemy._patrolPath = null;
             _fsm.ChangeState(EnemyStatesEnum.Pursuit);
         }
 
-        if(myPath.Count >= 1)
+        if(myPath != null)
         {
-            Vector2 dir = myPath[_currentPathWaypoint].transform.position - _enemy.transform.position;
-
-            _enemy.transform.up = dir;
-            _enemy.transform.position += _enemy.transform.up * _enemy.speed * Time.deltaTime;
-
-            if (dir.magnitude < 0.1f)
+                if(myPath.Count >= 1)
             {
-                //myPath.RemoveAt(_currentPathWaypoint);        Este es el metodo de borrar
-                //_currentPathWaypoint++;
-                _currentPathWaypoint++;
-                if (_currentPathWaypoint > myPath.Count - 1)
+                Vector2 dir = myPath[_currentPathWaypoint].transform.position - _enemy.transform.position;
+
+                _enemy.transform.up = dir;
+                _enemy.transform.position += _enemy.transform.up * _enemy.speed * Time.deltaTime;
+
+                if (dir.magnitude < 0.1f)
                 {
-                    _enemy.foundWaypoint = true;
-                    _fsm.ChangeState(EnemyStatesEnum.Patrol);
-                }
+                    //myPath.RemoveAt(_currentPathWaypoint);        Este es el metodo de borrar
+                    //_currentPathWaypoint++;
+                    _currentPathWaypoint++;
+                    if (_currentPathWaypoint > myPath.Count - 1)
+                    {
+                        _enemy.foundWaypoint = true;
+                        _fsm.ChangeState(EnemyStatesEnum.Patrol);
+                    }
                     
+                }
             }
         }
+        
 
     }
     public void OnExit()
     {
         Debug.Log("Sali de Pathfinding");
+        myPath = null;
+        _currentPathWaypoint = 0;
+    }
+
+    public void GetAStar()
+    {
+        myPath = new List<Node>();
+        
+        startingPoint = GameManager.instance.GetStartNode(_enemy.transform);
+        Debug.Log("Start at " + startingPoint);
+
+        _currentWaypoint = _enemy.GetCurrentWaypoint();
+        
+        endingPoint = GameManager.instance.GetEndNode(_enemy.waypoints[_currentWaypoint].transform);
+        Debug.Log("End at " + endingPoint);
+
+        myPath = _pf.ConstructPathAStar(endingPoint, startingPoint); //Antes mandaba startingPoint,endingPoint. Ahora van al revés.
     }
 }

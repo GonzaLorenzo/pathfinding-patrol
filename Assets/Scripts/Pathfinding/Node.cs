@@ -15,42 +15,6 @@ public class Node : MonoBehaviour
     {
         GameManager.instance.AddNodes(this);
     }
-    
-    /* public List<Node> GetNeighbors(Node sn)
-    {
-        foreach(Node node in GameManager.instance.nodes)
-        {
-            Vector2 dir = node.transform.position - transform.position;
-           
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, dir.magnitude, obstacleMask);
-            if(hit == true) continue;
-            //Debug.Log("foreach " + dir + node);
-
-            if(first)
-            {
-                closeNodes = dir;
-                closestNode = node;
-                first = false;
-            }
-            else if(dir.magnitude < closeNodes.magnitude && dir.magnitude > 0.5)
-            {
-                if(node != sn)
-                {
-                    if(!_neighbors.Contains(node))
-                    {
-                        closeNodes = dir;
-                        closestNode = node;
-                        Debug.Log("Selecciono " + closeNodes + closestNode);
-                    }
-                }
-            }
-        }      
-        _neighbors.Add(closestNode);
-        Debug.Log("Añadi " + closestNode);
-       
-        first = true;
-        return _neighbors;
-    } */
 
     public List<Node> GetNeighbours(Node cn)
     {
@@ -63,10 +27,11 @@ public class Node : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(cn.transform.position, dir, dir.magnitude, obstacleMask);
             if(hit == true)
             {
-                continue;
+                Debug.Log("Este chocó " + node + "ANalizando este ajajaj " + cn);
             } 
             else
             {
+                Debug.Log("Este NO chocó " + node + "ANalizando este ajajaj " + cn);
                 _neighbors.Add(node);
             }
         }

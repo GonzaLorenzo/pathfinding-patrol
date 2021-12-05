@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     private Vector2 closeNodes;
     private Node closestNode;
     private bool first = true;
+    public LayerMask obstacleMask;
 
     public List<Node> nodes = new List<Node>();
 
@@ -43,7 +44,50 @@ public class GameManager : MonoBehaviour
         Debug.Log("Node added");
     }
 
-    public Node GetGoalNode(Transform position) //Vector2 position
+    public Node GetStartNode(Transform position) //Vector2 position
+    {
+        foreach(Node node in GameManager.instance.nodes)
+        {
+            //Vector2 dir = node.transform.position - transform.position;
+            //if(closeNodes == null || dir.x < closeNodes.x && dir.y < closeNodes.y)
+            
+            Vector2 dir = node.transform.position - position.transform.position;
+            //Debug.Log("foreach GetGoalNode" + dir + node);
+            RaycastHit2D hit = Physics2D.Raycast(position.transform.position, dir, dir.magnitude, obstacleMask);
+
+            if(first)
+            {
+                if(hit == true)
+                {
+
+                }
+                else
+                {
+                    closeNodes = dir;
+                    closestNode = node;
+                    first = false;
+                }
+            }
+            if(dir.magnitude < closeNodes.magnitude)
+            {
+                if(hit == true)
+                {
+
+                }
+                else
+                {
+                    closeNodes = dir;
+                    closestNode = node;
+                    Debug.Log("Selecciono GoalNode" + node);
+                }       
+            }
+        }
+
+        first = true;
+        return closestNode; 
+    }
+
+    public Node GetEndNode(Transform position) //Vector2 position
     {
         foreach(Node node in GameManager.instance.nodes)
         {
