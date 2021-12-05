@@ -31,9 +31,7 @@ public class PatrollingState : IState
         if(_enemy.foundTarget)
         {
             _fsm.ChangeState(EnemyStatesEnum.Pursuit);
-            Debug.Log("Gracias dios");
         }
-        //Cuando encuentra al Player pasa a PursuitState.
     }
     public void OnExit()
     {

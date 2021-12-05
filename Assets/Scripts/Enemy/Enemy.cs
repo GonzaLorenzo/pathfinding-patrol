@@ -14,18 +14,20 @@ public class Enemy : MonoBehaviour
     public float viewAngle;
     public LayerMask targetMask;
     public LayerMask obstacleMask;
-
+    public Pathfinding _pf;
     public Collider2D target;
-
+    public List<Node> _patrolPath = new List<Node>();
     public bool foundTarget = false;
+    //public List<Node> listToFollow;
 
     public bool foundWaypoint = true;
     void Awake() //Start()
     {
         _fsm = new StateMachine();
+        _pf = new Pathfinding();
         _fsm.AddState(EnemyStatesEnum.Patrol, new PatrollingState(_fsm, this));
         _fsm.AddState(EnemyStatesEnum.Pursuit, new PursuingState(_fsm, this));
-        _fsm.AddState(EnemyStatesEnum.Pathfinding, new PathfindingState(_fsm, this));
+        _fsm.AddState(EnemyStatesEnum.Pathfinding, new PathfindingState(_fsm, this, _pf));
         _fsm.ChangeState(EnemyStatesEnum.Patrol);
     }
 
@@ -42,7 +44,7 @@ public class Enemy : MonoBehaviour
         Vector2 dir = waypoints[_currentWaypoint].position - transform.position;
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, dir.magnitude, obstacleMask);
-        if(hit == false)
+        if (hit == false)
         {
             foundWaypoint = true;
             transform.up = dir;
@@ -93,5 +95,29 @@ public class Enemy : MonoBehaviour
     public int GetCurrentWaypoint()
     {
         return _currentWaypoint;
+    }
+
+    public void PathfindingPatrol()
+    {
+        Vector2 dir = waypoints[_currentWaypoint].position - transform.position;
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, dir.magnitude, obstacleMask);
+        if (hit == false)
+        {
+            foundWaypoint = true;
+            transform.up = dir;
+            transform.position += transform.up * speed * Time.deltaTime;
+
+            if (dir.magnitude < 0.1f)
+            {
+                _currentWaypoint++;
+                if (_currentWaypoint > waypoints.Count - 1)
+                    _currentWaypoint = 0;
+            }
+        }
+        else
+        {
+            foundWaypoint = false;
+        }
     }
 }

@@ -285,7 +285,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   blocked: 0
-  cost: 0
+  cost: 1
 --- !u!212 &129680720
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1323,7 +1323,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   blocked: 0
-  cost: 0
+  cost: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1504,7 +1504,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   blocked: 0
-  cost: 0
+  cost: 1
 --- !u!1 &547666892
 GameObject:
   m_ObjectHideFlags: 0
@@ -1602,7 +1602,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   blocked: 0
-  cost: 0
+  cost: 1
 --- !u!1 &571391858 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1336041473088719210, guid: 732ed5a35cf006946bc1dd34d94df42f,
@@ -1765,7 +1765,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   blocked: 0
-  cost: 0
+  cost: 1
 --- !u!212 &641500117
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1863,7 +1863,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   blocked: 0
-  cost: 0
+  cost: 1
 --- !u!212 &668865354
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2760,7 +2760,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   blocked: 0
-  cost: 0
+  cost: 1
 --- !u!1001 &977975209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2967,7 +2967,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   blocked: 0
-  cost: 0
+  cost: 1
 --- !u!212 &1156509361
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3308,7 +3308,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   blocked: 0
-  cost: 0
+  cost: 1
 --- !u!212 &1272900091
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3558,7 +3558,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   blocked: 0
-  cost: 0
+  cost: 1
 --- !u!212 &1382350127
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3966,7 +3966,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   blocked: 0
-  cost: 0
+  cost: 1
 --- !u!212 &1591032618
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4473,7 +4473,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   blocked: 0
-  cost: 0
+  cost: 1
 --- !u!212 &1694165971
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4884,7 +4884,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   blocked: 0
-  cost: 0
+  cost: 1
 --- !u!212 &1801006786
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5175,7 +5175,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   blocked: 0
-  cost: 0
+  cost: 1
 --- !u!212 &1946635261
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5632,7 +5632,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   blocked: 0
-  cost: 0
+  cost: 1
 --- !u!212 &2088094601
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5730,7 +5730,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   blocked: 0
-  cost: 0
+  cost: 1
 --- !u!212 &2126846879
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5869,12 +5869,12 @@ PrefabInstance:
     - target: {fileID: 6332614040718817769, guid: b9c3ba1e6e62d404187357b9f23dff4a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.43
+      value: -0.16
       objectReference: {fileID: 0}
     - target: {fileID: 6332614040718817769, guid: b9c3ba1e6e62d404187357b9f23dff4a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.61
+      value: -3.85
       objectReference: {fileID: 0}
     - target: {fileID: 6332614040718817769, guid: b9c3ba1e6e62d404187357b9f23dff4a,
         type: 3}

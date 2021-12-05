@@ -13,7 +13,6 @@ public class GameManager : MonoBehaviour
     private Node closestNode;
     private bool first = true;
 
-
     public List<Node> nodes = new List<Node>();
 
     private void Awake()
@@ -29,12 +28,13 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-
+        
     }
 
     public void SearchPath(Node startingNode, Node goalNode)
     {
-        StartCoroutine(_pf.PaintAStar(startingNode, goalNode, debugTime));     
+        //StartCoroutine(_pf.PaintAStar(startingNode, goalNode, debugTime));
+        //StartCoroutine(_pf.ConstructPathAStar(startingNode, goalNode));
     }
 
     public void AddNodes(Node node)

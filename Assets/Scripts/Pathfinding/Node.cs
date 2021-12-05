@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Node : MonoBehaviour
 {
-    private List<Node> _neighbors = new List<Node>();
     private Vector2 closeNodes;
     private Node closestNode;
     public LayerMask obstacleMask;
@@ -16,7 +15,8 @@ public class Node : MonoBehaviour
     {
         GameManager.instance.AddNodes(this);
     }
-    public List<Node> GetNeighbors(Node sn)
+    
+    /* public List<Node> GetNeighbors(Node sn)
     {
         foreach(Node node in GameManager.instance.nodes)
         {
@@ -32,16 +32,15 @@ public class Node : MonoBehaviour
                 closestNode = node;
                 first = false;
             }
-            //else if(dir.x < closeNodes.x && dir.y < closeNodes.y && dir.x > 0 && dir.y > 0)
             else if(dir.magnitude < closeNodes.magnitude && dir.magnitude > 0.5)
             {
                 if(node != sn)
                 {
                     if(!_neighbors.Contains(node))
                     {
-                    closeNodes = dir;
-                    closestNode = node;
-                    Debug.Log("Selecciono " + closeNodes + closestNode);
+                        closeNodes = dir;
+                        closestNode = node;
+                        Debug.Log("Selecciono " + closeNodes + closestNode);
                     }
                 }
             }
@@ -50,6 +49,27 @@ public class Node : MonoBehaviour
         Debug.Log("Añadi " + closestNode);
        
         first = true;
+        return _neighbors;
+    } */
+
+    public List<Node> GetNeighbours(Node cn)
+    {
+        List<Node> _neighbors = new List<Node>();
+
+        foreach(Node node in GameManager.instance.nodes)
+        {
+            Vector2 dir = node.transform.position - cn.transform.position;
+           
+            RaycastHit2D hit = Physics2D.Raycast(cn.transform.position, dir, dir.magnitude, obstacleMask);
+            if(hit == true)
+            {
+                continue;
+            } 
+            else
+            {
+                _neighbors.Add(node);
+            }
+        }
         return _neighbors;
     }
 }

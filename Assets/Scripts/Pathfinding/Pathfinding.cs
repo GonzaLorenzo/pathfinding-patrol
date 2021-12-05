@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using System.IO;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Pathfinding
 {
-    public IEnumerator PaintAStar(Node startingNode, Node goalNode, float time)
+    public List<Node> ConstructPathAStar(Node startingNode, Node goalNode)
     {
         PriorityQueue frontier = new PriorityQueue();
         frontier.Put(startingNode, 0);
@@ -12,11 +13,12 @@ public class Pathfinding
         Dictionary<Node, int> costSoFar = new Dictionary<Node, int>();
         cameFrom.Add(startingNode, null);
         costSoFar.Add(startingNode, 0);
+
+
         while (frontier.Count() > 0)
         {
             Node current = frontier.Get();
-            GameManager.instance.PaintGameObjectColor(current.gameObject, Color.blue);
-            yield return new WaitForSeconds(time);
+
             if (current == goalNode)
             {
                 List<Node> path = new List<Node>();
@@ -26,48 +28,44 @@ public class Pathfinding
                     path.Add(nodeToAdd);
                     nodeToAdd = cameFrom[nodeToAdd];
                 }
-                PaintNodeList(path);
-                yield break;
+                return path;
             }
 
-            foreach(Node next in current.GetNeighbors(startingNode))
+            foreach (Node next in current.GetNeighbours(current)) //Antes usaba starting node
             {
-                if (next.blocked) continue;
                 int newCost = costSoFar[current] + next.cost;
                 if (!costSoFar.ContainsKey(next) || newCost < costSoFar[next])
                 {
-                    if (!costSoFar.ContainsKey(next))
+                    if (costSoFar.ContainsKey(next))
+                    {
+                        costSoFar[next] = newCost;
+                        cameFrom[next] = current;
+                    }
+                    else
                     {
                         cameFrom.Add(next, current);
                         costSoFar.Add(next, newCost);
-                        GameManager.instance.PaintGameObjectColor(current.gameObject, Color.gray);
-                    }
-                    else
-                    {   
-                        costSoFar[next] = newCost;
-                        cameFrom[next] = current;
-                        GameManager.instance.PaintGameObjectColor(current.gameObject, Color.red);
                     }
                     float priority = newCost + Heuristic(next.transform.position, goalNode.transform.position);
                     frontier.Put(next, priority);
 
                 }
-            
-                GameManager.instance.PaintGameObjectColor(current.gameObject, Color.gray);
             }
         }
-
-        float Heuristic(Vector2 a, Vector2 b)
+        //Debug.Log("PATH somo s " + path.Count);
+        return default; 
+    }
+    
+    float Heuristic(Vector2 a, Vector2 b)
         {
             return Vector2.Distance(a, b);
         }
 
-        void PaintNodeList(List<Node> list)
+    void PaintNodeList(List<Node> list)
         {
             foreach (var item in list)
             {
                 GameManager.instance.PaintGameObjectColor(item.gameObject, Color.cyan);
             }
         }
-    }
 }

@@ -17,6 +17,7 @@ public class PursuingState : IState
     public void OnStart()
     {
         Debug.Log("Entré a Pursuit");
+        //Avisar a los demás, veremos como.
     }
 
     public void OnUpdate()
