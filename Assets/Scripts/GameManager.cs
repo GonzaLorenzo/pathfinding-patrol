@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public LayerMask obstacleMask;
 
     public List<Node> nodes = new List<Node>();
+    public List<Enemy> enemies = new List<Enemy>();
 
     private void Awake()
     {
@@ -36,6 +37,12 @@ public class GameManager : MonoBehaviour
     {
         //StartCoroutine(_pf.PaintAStar(startingNode, goalNode, debugTime));
         //StartCoroutine(_pf.ConstructPathAStar(startingNode, goalNode));
+    }
+
+    public void AddEnemies(Enemy enemy)
+    {
+        enemies.Add(enemy);
+        Debug.Log("Enemy added");
     }
 
     public void AddNodes(Node node)

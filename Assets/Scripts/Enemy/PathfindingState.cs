@@ -34,6 +34,7 @@ public class PathfindingState : IState
         if(_enemy.foundTarget)
         {
             _fsm.ChangeState(EnemyStatesEnum.Pursuit);
+            _enemy.AlertEnemies(_enemy.transform, _enemy.target.transform);
         }
 
         if(myPath != null)
@@ -47,15 +48,12 @@ public class PathfindingState : IState
 
                 if (dir.magnitude < 0.1f)
                 {
-                    //myPath.RemoveAt(_currentPathWaypoint);        Este es el metodo de borrar
-                    //_currentPathWaypoint++;
                     _currentPathWaypoint++;
                     if (_currentPathWaypoint > myPath.Count - 1)
                     {
                         _enemy.foundWaypoint = true;
                         _fsm.ChangeState(EnemyStatesEnum.Patrol);
                     }
-                    
                 }
             }
         }

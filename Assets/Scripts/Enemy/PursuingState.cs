@@ -30,6 +30,8 @@ public class PursuingState : IState
 
         if(!_enemy.foundTarget)
         {
+            _enemy.ResetCurrentWaypointIndex();
+            _enemy.ResetWaypoints();
             _fsm.ChangeState(EnemyStatesEnum.Patrol);
         }
     }

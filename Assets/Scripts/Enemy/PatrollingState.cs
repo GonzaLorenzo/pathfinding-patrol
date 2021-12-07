@@ -31,6 +31,7 @@ public class PatrollingState : IState
         if(_enemy.foundTarget)
         {
             _fsm.ChangeState(EnemyStatesEnum.Pursuit);
+            _enemy.AlertEnemies(_enemy.transform, _enemy.target.transform);
         }
     }
     public void OnExit()
