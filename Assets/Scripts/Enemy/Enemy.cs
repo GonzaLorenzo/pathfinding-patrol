@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
     public List<Transform> waypoints;
     public List<Transform> startingWaypoints;
     public float speed;
-    private int _currentWaypoint = 0; //Capaz reiniciar a 0
+    private int _currentWaypoint = 0;
     public Transform alarmPosition = null;
     [Header("FIELD OF VIEW")]
     public float viewRadius;
@@ -19,12 +19,11 @@ public class Enemy : MonoBehaviour
     public LayerMask obstacleMask;
     public Pathfinding _pf;
     public Collider2D target;
-    public List<Node> _patrolPath = new List<Node>(); //Capaz se borra
+    public List<Node> _patrolPath = new List<Node>(); 
     public bool foundTarget = false;
-    //public List<Node> listToFollow;
 
     public bool foundWaypoint = true;
-    void Awake() //Start()
+    void Awake()
     {
         
         _fsm = new StateMachine();
@@ -38,7 +37,6 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         GameManager.instance.AddEnemies(this);
-        SaveMyWaypoints();
     }
     void Update()
     {
@@ -81,12 +79,11 @@ public class Enemy : MonoBehaviour
             
             if (Vector2.Angle(transform.up, dir.normalized) < viewAngle / 2)
             {
-                //if(Physics2D.Raycast(transform.position, dir, dir.magnitude, obstacleMask) == false)
+
                 RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, dir.magnitude, obstacleMask);
                 if(hit == false)
                 {
                     item.GetComponent<Renderer>().material.color = Color.red;
-                    //_targetsFound.Add(item.gameObject);
 
                     Debug.DrawLine(transform.position, item.transform.position, Color.green);
                     foundTarget = true;
@@ -107,12 +104,6 @@ public class Enemy : MonoBehaviour
         {
             if(enemy != this)
             {
-                //enemy.ResetCurrentWaypointIndex();
-                //enemy.target = target;
-                //enemy.ChangeWaypoints(targetPosition);
-
-                //Está bien pensado pero debería usar Pathfinding en vez de patrol porque Pathfindin pasa a patrol al final. 
-
                 enemy.target = target;
                 enemy.alarmPosition = enemyPosition;
                 enemy.beenAlerted = true;
@@ -123,27 +114,5 @@ public class Enemy : MonoBehaviour
     public int GetCurrentWaypoint()
     {
         return _currentWaypoint;
-    }
-
-    private void SaveMyWaypoints()
-    {
-        startingWaypoints = waypoints;
-    }
-
-    public void ResetWaypoints()
-    {
-        waypoints = new List<Transform>();
-        waypoints = startingWaypoints;
-    }
-
-    public void ChangeWaypoints(Transform endingWaypoint)
-    {
-        waypoints = new List<Transform>();
-        waypoints.Add(endingWaypoint);
-    }
-
-    public void ResetCurrentWaypointIndex()
-    {
-        _currentWaypoint = 0;
     }
 }

@@ -17,7 +17,6 @@ public class PursuingState : IState
     public void OnStart()
     {
         Debug.Log("Entré a Pursuit");
-        //Avisar a los demás, veremos como.
     }
 
     public void OnUpdate()
@@ -30,8 +29,6 @@ public class PursuingState : IState
 
         if(!_enemy.foundTarget)
         {
-            _enemy.ResetCurrentWaypointIndex();
-            _enemy.ResetWaypoints();
             _fsm.ChangeState(EnemyStatesEnum.Patrol);
         }
     }

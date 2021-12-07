@@ -52,20 +52,11 @@ public class Pathfinding
                 }
             }
         }
-        //Debug.Log("PATH somo s " + path.Count);
         return default; 
     }
     
     float Heuristic(Vector2 a, Vector2 b)
-        {
-            return Vector2.Distance(a, b);
-        }
-
-    void PaintNodeList(List<Node> list)
-        {
-            foreach (var item in list)
-            {
-                GameManager.instance.PaintGameObjectColor(item.gameObject, Color.cyan);
-            }
-        }
+    {
+        return Vector2.Distance(a, b);
+    }
 }

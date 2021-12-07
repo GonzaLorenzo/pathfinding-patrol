@@ -58,8 +58,7 @@ public class PathfindingState : IState
                     }
                 }
             }
-        }
-        
+        }   
 
     }
     public void OnExit()
@@ -88,6 +87,6 @@ public class PathfindingState : IState
             Debug.Log("End at " + endingPoint);
         }
 
-        myPath = _pf.ConstructPathAStar(endingPoint, startingPoint); //Antes mandaba startingPoint,endingPoint. Ahora van al revés.
+        myPath = _pf.ConstructPathAStar(endingPoint, startingPoint);
     }
 }

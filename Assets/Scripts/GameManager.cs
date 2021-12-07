@@ -28,17 +28,6 @@ public class GameManager : MonoBehaviour
         _pf = new Pathfinding();
     }
 
-    void Update()
-    {
-        
-    }
-
-    public void SearchPath(Node startingNode, Node goalNode)
-    {
-        //StartCoroutine(_pf.PaintAStar(startingNode, goalNode, debugTime));
-        //StartCoroutine(_pf.ConstructPathAStar(startingNode, goalNode));
-    }
-
     public void AddEnemies(Enemy enemy)
     {
         enemies.Add(enemy);
@@ -51,15 +40,12 @@ public class GameManager : MonoBehaviour
         Debug.Log("Node added");
     }
 
-    public Node GetStartNode(Transform position) //Vector2 position
+    public Node GetStartNode(Transform position) 
     {
         foreach(Node node in GameManager.instance.nodes)
-        {
-            //Vector2 dir = node.transform.position - transform.position;
-            //if(closeNodes == null || dir.x < closeNodes.x && dir.y < closeNodes.y)
-            
+        {           
             Vector2 dir = node.transform.position - position.transform.position;
-            //Debug.Log("foreach GetGoalNode" + dir + node);
+            
             RaycastHit2D hit = Physics2D.Raycast(position.transform.position, dir, dir.magnitude, obstacleMask);
 
             if(first)
@@ -93,15 +79,12 @@ public class GameManager : MonoBehaviour
         return closestNode; 
     }
 
-    public Node GetEndNode(Transform position) //Vector2 position
+    public Node GetEndNode(Transform position) 
     {
         foreach(Node node in GameManager.instance.nodes)
-        {
-            //Vector2 dir = node.transform.position - transform.position;
-            //if(closeNodes == null || dir.x < closeNodes.x && dir.y < closeNodes.y)
-            
+        {           
             Vector2 dir = node.transform.position - position.transform.position;
-            //Debug.Log("foreach GetGoalNode" + dir + node);
+
 
             if(first)
             {
@@ -118,11 +101,5 @@ public class GameManager : MonoBehaviour
 
         first = true;
         return closestNode; 
-    }
-
-    public void PaintGameObjectColor(GameObject go, Color color)
-    {
-        if (go == null) return;
-        go.GetComponent<Renderer>().material.color = color;
     }
 }
