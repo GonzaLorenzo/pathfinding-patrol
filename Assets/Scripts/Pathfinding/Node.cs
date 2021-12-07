@@ -27,11 +27,10 @@ public class Node : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(cn.transform.position, dir, dir.magnitude, obstacleMask);
             if(hit == true)
             {
-                Debug.Log("Este chocó " + node + "ANalizando este ajajaj " + cn);
+                
             } 
             else
             {
-                Debug.Log("Este NO chocó " + node + "ANalizando este ajajaj " + cn);
                 _neighbors.Add(node);
             }
         }

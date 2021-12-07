@@ -85,7 +85,6 @@ public class GameManager : MonoBehaviour
                 {
                     closeNodes = dir;
                     closestNode = node;
-                    Debug.Log("Selecciono GoalNode" + node);
                 }       
             }
         }
@@ -114,8 +113,6 @@ public class GameManager : MonoBehaviour
             {
                 closeNodes = dir;
                 closestNode = node;
-
-                Debug.Log("Selecciono GoalNode" + node);
             }
         }
 

@@ -699,6 +699,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyGhost (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8826740248778704686, guid: b9c3ba1e6e62d404187357b9f23dff4a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8958222219857751223, guid: b9c3ba1e6e62d404187357b9f23dff4a,
         type: 3}
       propertyPath: waypoints.Array.size
@@ -1004,7 +1009,7 @@ PrefabInstance:
     - target: {fileID: 8826740248778704686, guid: b9c3ba1e6e62d404187357b9f23dff4a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8958222219857751223, guid: b9c3ba1e6e62d404187357b9f23dff4a,
         type: 3}
