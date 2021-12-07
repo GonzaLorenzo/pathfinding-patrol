@@ -21,7 +21,7 @@ public class PatrollingState : IState
     {
         _enemy.Patrol();
 
-        if(!_enemy.foundWaypoint)
+        if(!_enemy.foundWaypoint || _enemy.beenAlerted)
         {
             _fsm.ChangeState(EnemyStatesEnum.Pathfinding);
         }
@@ -31,7 +31,7 @@ public class PatrollingState : IState
         if(_enemy.foundTarget)
         {
             _fsm.ChangeState(EnemyStatesEnum.Pursuit);
-            _enemy.AlertEnemies(_enemy.transform, _enemy.target.transform);
+            _enemy.AlertEnemies(_enemy.transform);
         }
     }
     public void OnExit()

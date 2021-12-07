@@ -34,7 +34,7 @@ public class PathfindingState : IState
         if(_enemy.foundTarget)
         {
             _fsm.ChangeState(EnemyStatesEnum.Pursuit);
-            _enemy.AlertEnemies(_enemy.transform, _enemy.target.transform);
+            _enemy.AlertEnemies(_enemy.transform);
         }
 
         if(myPath != null)
@@ -52,6 +52,8 @@ public class PathfindingState : IState
                     if (_currentPathWaypoint > myPath.Count - 1)
                     {
                         _enemy.foundWaypoint = true;
+                        _enemy.beenAlerted = false;
+                        _enemy.alarmPosition = null;
                         _fsm.ChangeState(EnemyStatesEnum.Patrol);
                     }
                 }
@@ -70,14 +72,21 @@ public class PathfindingState : IState
     public void GetAStar()
     {
         myPath = new List<Node>();
-        
+
         startingPoint = GameManager.instance.GetStartNode(_enemy.transform);
         Debug.Log("Start at " + startingPoint);
-
-        _currentWaypoint = _enemy.GetCurrentWaypoint();
         
-        endingPoint = GameManager.instance.GetEndNode(_enemy.waypoints[_currentWaypoint].transform);
-        Debug.Log("End at " + endingPoint);
+        if(_enemy.alarmPosition != null)
+        {
+            endingPoint = GameManager.instance.GetEndNode(_enemy.alarmPosition);
+        }
+        else
+        {
+            _currentWaypoint = _enemy.GetCurrentWaypoint();
+        
+            endingPoint = GameManager.instance.GetEndNode(_enemy.waypoints[_currentWaypoint].transform);
+            Debug.Log("End at " + endingPoint);
+        }
 
         myPath = _pf.ConstructPathAStar(endingPoint, startingPoint); //Antes mandaba startingPoint,endingPoint. Ahora van al revés.
     }

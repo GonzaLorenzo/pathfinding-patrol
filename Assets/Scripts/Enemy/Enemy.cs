@@ -10,11 +10,12 @@ public class Enemy : MonoBehaviour
     public List<Transform> startingWaypoints;
     public float speed;
     private int _currentWaypoint = 0; //Capaz reiniciar a 0
-
+    public Transform alarmPosition = null;
     [Header("FIELD OF VIEW")]
     public float viewRadius;
     public float viewAngle;
     public LayerMask targetMask;
+    public bool beenAlerted = false;
     public LayerMask obstacleMask;
     public Pathfinding _pf;
     public Collider2D target;
@@ -100,18 +101,22 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void AlertEnemies(Transform enemyPosition, Transform targetPosition)
+    public void AlertEnemies(Transform enemyPosition)
     {
         foreach (Enemy enemy in GameManager.instance.enemies)
         {
             if(enemy != this)
             {
-                enemy.ResetCurrentWaypointIndex();
-                enemy.target = target;
-                enemy.ChangeWaypoints(targetPosition);
-            }
-            
+                //enemy.ResetCurrentWaypointIndex();
+                //enemy.target = target;
+                //enemy.ChangeWaypoints(targetPosition);
 
+                //Está bien pensado pero debería usar Pathfinding en vez de patrol porque Pathfindin pasa a patrol al final. 
+
+                enemy.target = target;
+                enemy.alarmPosition = enemyPosition;
+                enemy.beenAlerted = true;
+            }
         }
     }
 
